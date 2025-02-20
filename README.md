@@ -6,5 +6,5 @@ URL:<br>
 `https://cdn.hype.studio/`
 
 CDN:<br>
-`https://cnd-host.pages.dev/`<br>
-`https://cdn.jsdelivr.net/gh/hypestudiox/cnd-host/`
+`https://cdn-hype.pages.dev/`<br>
+`https://cdn.jsdelivr.net/gh/hypestudiox/cdn-hype/`
