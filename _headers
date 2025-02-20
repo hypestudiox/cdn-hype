@@ -1,7 +1,6 @@
 /*
   Access-Control-Allow-Origin: *
-  X-Robots-Tag: noindex
-  X-Robots-Tag: nosnippet
+  X-Robots-Tag: noindex, nosnippet
 
 https://cdn-hype.pages.dev/*
   X-Robots-Tag: noindex
