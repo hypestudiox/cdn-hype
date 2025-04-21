@@ -11,8 +11,8 @@
   --accent--violet: #7c2348;
   --light-gray: #eee;
   --dark-gray: #8c8f90;
-  --ust--light-gold: #c90;
   --gray: #ccc;
+  --ust--light-gold: #c90;
 }
 
 body {
@@ -117,11 +117,12 @@ ul, ol {
   margin-right: 0;
   font-size: 32px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 1;
 }
 
 .h-hh2-blue.large {
   font-size: 48px;
+  line-height: 1;
 }
 
 .h-hh2-white {
@@ -226,7 +227,8 @@ ul, ol {
 .h-page-wrap {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 150px;
+  box-shadow: inset 0 -150px #ccc;
 }
 
 .h-page-wrap.white-bg {
@@ -262,6 +264,7 @@ ul, ol {
 
 .h-banner-bg.light-blue {
   background-color: var(--accent--light-blue);
+  background-color: #0074bc;
   background-image: url('https://cdn-hype.pages.dev/p/ust/brand/images/background-noise.png'), linear-gradient(200deg, #00336680, #0000);
   background-position: 0 0, 0 0;
   background-size: auto, auto;
@@ -408,6 +411,13 @@ ul, ol {
   margin-bottom: 20px;
 }
 
+.h-flex-h.gap-wrap.smaller-gap {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .h-flex-h.full-height {
   height: 100%;
 }
@@ -470,6 +480,11 @@ ul, ol {
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+.h-narrow.less {
+  width: 85%;
+  max-width: none;
 }
 
 .h-img-icon {
@@ -599,7 +614,7 @@ ul, ol {
 }
 
 .h-go-down.bg-arrow {
-  opacity: .75;
+  opacity: .8;
   color: #0000;
   background-image: url('https://cdn-hype.pages.dev/p/ust/brand/images/h-down-section.svg');
   background-position: 50%;
@@ -779,6 +794,24 @@ ul, ol {
 
 .h-item-block.col.five {
   width: 20%;
+}
+
+.h-item-block.larger {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  text-align: left;
+  line-height: 1.35;
+  font-size: inherit;
+  flex-flow: column;
+  flex: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(25% - .75rem);
+  display: flex;
+}
+
+.h-item-block.larger.more {
+  width: calc(33.3333% - .666667rem);
 }
 
 .h-item-icon {
@@ -1082,6 +1115,7 @@ ul, ol {
 
 .h-note {
   color: var(--dark-gray);
+  padding-right: 1ch;
   font-size: 1.125em;
   line-height: 1.45em;
   display: inline-block;
@@ -1161,7 +1195,7 @@ ul, ol {
   max-height: 280px;
 }
 
-.h-img.taller.more-x2 {
+.h-img.taller.more-2x {
   width: 480px;
   max-height: 320px;
 }
@@ -1279,6 +1313,14 @@ ul, ol {
   width: 45%;
 }
 
+.h-img-large.less-large.medium {
+  width: 55%;
+}
+
+.h-img-large.larger {
+  width: 85%;
+}
+
 .h-img-std {
   flex: 1;
   width: 160px;
@@ -1311,7 +1353,7 @@ ul, ol {
 }
 
 .h-img-std.larger.more {
-  width: 460px;
+  width: 560px;
 }
 
 .h-img-std.square {
@@ -1823,6 +1865,7 @@ ul, ol {
   color: #fff;
   text-align: center;
   letter-spacing: .0125em;
+  cursor: pointer;
   border-radius: 8px;
   flex-direction: row;
   flex: none;
@@ -1859,6 +1902,36 @@ ul, ol {
 .show-this {
   opacity: 1;
   pointer-events: auto;
+}
+
+.h-demo-lang-selector {
+  z-index: 999999;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  background-color: var(--gray);
+  flex-flow: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: fixed;
+  inset: auto 3rem 0% auto;
+  overflow: clip;
+}
+
+.h-demo-lang-button {
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+}
+
+.h-demo-lang-button.w--current {
+  background-color: var(--ust--blue);
+  color: var(--light-gray);
+  text-align: center;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -1950,6 +2023,11 @@ ul, ol {
     max-width: 100%;
   }
 
+  .h-narrow.less {
+    width: 100%;
+    max-width: none;
+  }
+
   .h-section-inner.narrow-adj {
     padding-bottom: 0;
     padding-left: 0%;
@@ -2029,6 +2107,10 @@ ul, ol {
 
   .h-item-block.col.five {
     width: 33%;
+  }
+
+  .h-item-block.larger, .h-item-block.larger.more {
+    width: calc(50% - .5rem);
   }
 
   .h-text-title {
@@ -2430,6 +2512,10 @@ ul, ol {
     width: 80%;
   }
 
+  .h-img-large.less-large.medium {
+    width: 70%;
+  }
+
   .h-img-std.col-fit {
     height: 28vw;
   }
@@ -2689,6 +2775,10 @@ ul, ol {
 
   .h-img-large.less-large.small {
     width: 90%;
+  }
+
+  .h-img-large.less-large.medium {
+    width: 80%;
   }
 
   .h-img-std.col-fit {
