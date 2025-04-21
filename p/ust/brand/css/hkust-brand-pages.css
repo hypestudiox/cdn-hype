@@ -483,7 +483,8 @@ ul, ol {
 }
 
 .h-narrow.less {
-  max-width: 85%;
+  width: 85%;
+  max-width: none;
 }
 
 .h-img-icon {
