@@ -1167,7 +1167,7 @@ img {
 .h-img {
   object-fit: contain;
   object-position: 0% 0%;
-  width: 300px;
+  width: 330px;
   height: auto;
   max-height: 100px;
   margin-top: 30px;
@@ -1206,11 +1206,11 @@ img {
 }
 
 .h-img.long {
-  width: 420px;
+  width: 425px;
 }
 
 .h-img.longer {
-  width: 520px;
+  width: 525px;
   max-height: 120px;
 }
 
@@ -1611,7 +1611,7 @@ img {
   -webkit-user-select: auto;
   user-select: auto;
   flex: 1;
-  min-height: 180px;
+  min-height: 300px;
   margin: 0;
   padding: 0;
   display: block;
