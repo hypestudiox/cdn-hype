@@ -4,8 +4,8 @@
     "id" : "/",
     "start_url" : "/",
     "display" : "fullscreen",
-    "name" : "Option Price Calculator",
-    "short_name" : "Option Price Calculator",
+    "name" : "Option Price",
+    "short_name" : "Option Price",
     "description" : "Take-Profit / Stop-Loss Calculator",
     "icons": [
         {
