@@ -1,0 +1,43 @@
+{
+    "theme_color" : "#000000",
+    "background_color" : "#000000",
+    "id" : "/",
+    "start_url" : "/",
+    "display" : "fullscreen",
+    "name" : "Option Price Calculator",
+    "short_name" : "Option Price Calculator",
+    "description" : "Take-Profit / Stop-Loss Calculator",
+    "icons": [
+        {
+            "src": "https://cdn.prod.website-files.com/68fba86e729f8d2bddda15a5/68fbb1337b94d428072ac88a_opc-32.png",
+            "sizes": "32x32",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https://cdn.prod.website-files.com/68fba86e729f8d2bddda15a5/68fbb13a43811171ecb4a28c_opc-256.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https://cdn.prod.website-files.com/68fba86e729f8d2bddda15a5/68fbb13a43811171ecb4a28c_opc-256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https://cdn.prod.website-files.com/68fba86e729f8d2bddda15a5/68fbb13a43811171ecb4a28c_opc-256.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "https://cdn.prod.website-files.com/68fba86e729f8d2bddda15a5/68fbb13a43811171ecb4a28c_opc-256.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "orientation": "portrait"
+}
